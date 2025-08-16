@@ -2,25 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AI Travel Budget Optimizer</title>
+  <title>AI Travel & Budget Agent</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>AI Travel Expense & Budget Optimizer</h1>
-  <form id="budgetForm">
-    <label>Destination:</label>
-    <input type="text" id="location" required><br>
+  <h1>AI Travel & Budget Companion</h1>
 
-    <label>Number of Days:</label>
-    <input type="number" id="days" required><br>
-
-    <label>Budget (in INR/USD):</label>
-    <input type="number" id="budget" required><br>
-
-    <button type="submit">Optimize</button>
+  <form id="promptForm">
+    <label for="prompt">Enter your prompt:</label><br>
+    <textarea id="prompt" placeholder="e.g., Plan me a 3-day trip to Jaipur" required></textarea><br>
+    <button type="submit">Ask Agent</button>
   </form>
 
-  <h2>Optimized Plan:</h2>
+  <h2>Category Detected:</h2>
+  <div id="categoryBox">--</div>
+
+  <h2>Agent Response:</h2>
   <div id="result"></div>
 
   <script src="script.js"></script>
